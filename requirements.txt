@@ -14,6 +14,7 @@ defusedxml==0.7.1
 entrypoints==0.3
 executing==0.8.3
 Flask==2.1.1
+gunicorn==20.1.0
 importlib-metadata==4.11.3
 ipykernel==6.9.1
 ipython==8.2.0
@@ -54,8 +55,8 @@ pyparsing==3.0.4
 pyrsistent==0.18.0
 python-dateutil==2.8.2
 pytz==2022.1
-pywin32==302
-pywinpty==2.0.2
+pywin32==302; platform_system == "Windows"
+pywinpty
 pyzmq==22.3.0
 qtconsole==5.3.0
 QtPy==2.0.1
@@ -63,7 +64,7 @@ scikit-learn==1.0.2
 scipy==1.8.0
 Send2Trash==1.8.0
 setuptools==58.0.4
-sip==4.19.13
+sip
 six==1.16.0
 sklearn==0.0
 stack-data==0.2.0
