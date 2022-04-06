@@ -1,0 +1,19 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Score Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+<div class="results">
+			<p class='result-p'>{{ batting_team }} - {{ win }}%</p>
+			<p class='result-p'>{{ bowling_team }} - {{ loss }}%</p>
+</div>
+
+</body>
+</html>

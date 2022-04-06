@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+	    <meta http-equiv="pragma" content="no-cache" />
+        <meta charset="utf-8">
+        <title>Result Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+
+	<body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class='heading_first'>IPL Result Predictor</span></h2>
+    	</div>
+		
+		<form action="{{ url_for('predict') }}" method="POST">
+                    <!-- Batting Team Dropdown -->
+                    <select class="form-input align-center" name="batting-team">
+                        <option value="none">--- Batting Team ---</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                    </select>
+					
+					<select class="form-input" name="bowling-team">
+                        <option value="none">--- Bowling Team ---</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                    </select><br>
+					
+					<input class="second-row" type="text" name="target" placeholder="-- Target --">
+					<input class="second-row" type="text" name="score" placeholder="-- Current Score --">
+					<input class="second-row" type="text" name="overs" placeholder="-- Overs --"><br>
+					<input class="second-row" type="text" name="wickets" placeholder="-- Wickets --"><br><br>
+					<input type="submit" class="myButton" value="Click Here For Results">
+		</form>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://www.instagram.com/geekshala/"><i class="fab fa-instagram fa-lg contact-icon"></i></a>
+			   <i> dreaming to make this a million rupees company by the end of this year </i>
+           </div>
+           <p class='footer-description'>To my mother</p>
+       </div>
+	   
+	   </body>
+</html>
